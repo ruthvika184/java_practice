@@ -1,4 +1,4 @@
-write a program that takes a word W as input and prints "Hello" followed by given word W.
+//write a program that takes a word W as input and prints "Hello" followed by given word W.
 
 
 import java.util.Scanner;
