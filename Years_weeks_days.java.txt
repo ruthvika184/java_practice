@@ -1,7 +1,6 @@
 /* given n number of days as input, write a program to convert n number of days into years y,weeks w,and days d
 take 1yr = 365 days */ 
 
-
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) { 
