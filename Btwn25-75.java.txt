@@ -8,6 +8,8 @@ class main{
         if(25<input){
             if(input<75){
                 System.out.println("True");
+            }else{
+                System.out.println("False");
             }
         }else{
             System.out.println("False");
