@@ -6,8 +6,8 @@ class main{
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        int hunds = (input/100)%10;
-        int tens = (input/10)%10;
+        int hunds = (input/100);   //gives 100 rupee notes;
+        int tens = (input/10)%10; 
         int ones = (input%10);
         int fifty = 0;
         int num =0;
