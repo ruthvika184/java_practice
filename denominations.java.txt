@@ -1,0 +1,25 @@
+//write a program to find the minimum no. of notes required for the given amt. available note denominations are 100,50,10,1.
+
+
+import java.util.Scanner;
+class main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        int hunds = (input/100)%10;
+        int tens = (input/10)%10;
+        int ones = (input%10);
+        int fifty = 0;
+        int num =0;
+        if(tens>=5){
+            fifty = 1;
+            num = tens-5;
+        }else{
+            num = tens;
+        }
+            System.out.println("100:"+hunds);
+            System.out.println("50:"+fifty);
+            System.out.println("10:"+num);
+            System.out.println("1:"+ones);
+    }
+}
