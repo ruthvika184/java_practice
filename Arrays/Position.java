@@ -12,9 +12,15 @@ class main{
         for(int i=0;i<n;i++){
             elements.add(sc.nextInt());
         }
-         elements.add(k);
-         Collections.sort(elements);
-         int index = elements.indexOf((Integer)k);
+        Collections.sort(elements);
+        int index;
+        if(elements.contains(k)){
+            index =0;
+        }else{
+            elements.add(k);
+            Collections.sort(elements);
+            index = elements.indexOf((Integer)k);
+        }
          System.out.println(index);
          System.out.print(elements);
     }
