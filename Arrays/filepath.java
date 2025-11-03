@@ -5,12 +5,12 @@ class main{
         String line = sc.nextLine();
         String[] msg = line.split(" ");
         ArrayList<String> name = new ArrayList<>(Arrays.asList(msg));
-        if(name.get(2).equals("WIN")){
+        if(name.contains("WIN")){
                 name.remove("WIN");
             String file = String.join(">",name);
 
             System.out.print(file);
-        }else if(name.get(2).equals("LINUX")){
+        }else if(name.contains("LINUX")){
                     name.remove("LINUX");
          String file = String.join("/",name);
 
