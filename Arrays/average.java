@@ -11,7 +11,9 @@ class main{
         }
         if(num.size()>0){
             double avg = (double)sum/num.size();
-                    System.out.printf("%.2f",avg);
+            avg = Math.round(avg*100.0)/100.0;
+            String result = String.valueOf(avg);
+            System.out.print(result);
         }
     }
 }
